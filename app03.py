@@ -6,12 +6,12 @@ app = Flask(__name__)
 @app.route('/')
 def index():
     # Jinjaテンプレートによる展開が行われる
-    return render_template('index.html')
+    return render_template('form.html')
 
-# @app.route('/loop')
-# def loop():
-#     # Jinjaテンプレートによる展開が行われる, count=10は変数を渡している
-#     return render_template('loop.html', count=10)
+# @app.route('/answer',methods=['POST'])
+# def answer():
+#     # Jinjaテンプレートによる展開が行われる
+#     return render_template('answer.html')
 
 if __name__=='__main__':
     app.run(host="0.0.0.0",port=5000,debug=True)
