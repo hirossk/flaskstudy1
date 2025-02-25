@@ -10,6 +10,8 @@ def index():
 
 # @app.route('/answer',methods=['POST'])
 # def answer():
+    # request.args.get('key')はGETメソッドの時
+    # request.form.get('key')はPOSTメソッドの時
 #     # Jinjaテンプレートによる展開が行われる
 #     return render_template('answer.html')
 
